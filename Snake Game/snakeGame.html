@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="snakeGame.js" defer></script>
+    <title>Snake Game</title>
+
+    <style>
+        body {
+      background-color: rgb(61, 105, 47);
+    }
+     h1{
+         margin-left: 39%;
+         font-family: Georgia, serif;
+         letter-spacing: 100%;
+     }
+    
+     button{
+         align-items: center;
+         margin-left: 1%;
+         margin-top: 2%;
+         width:fit-content;
+         border: none;
+         border-radius: 10%;
+         padding: 8px;
+         font-size: large;
+         font-family:'Gill Sans';
+         background-color: rgb(146, 139, 128);
+         text-align: center;
+     }
+    .grid {
+        width: 200px;
+        height: 200px;
+        border: 5px solid rgb(249, 229, 229);
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .grid div {
+        width: 20px;
+        height: 20px;
+        /*border:1px black solid;
+box-sizing:border-box*/
+    }
+    
+    .snake {
+      background: rgb(199, 199, 246);
+    }
+    
+    .apple {
+      background: rgb(238, 48, 6);
+      border-radius: 20px;
+    }
+    </style>
+
+</head>
+
+<body>
+    <h1><u>Play Snake Game</u></h1>
+<div class="scoreDisplay"></div>
+<div class="grid"></div>
+<div class="btn"> 
+<center style="margin-left: -1%;"> 
+  <button class="top">Top</button>
+  <button class="bottom">Bottom</button>
+  <button class="left">Left</button>
+  <button class="right">Right</button></center>
+</div>
+<div class="popup">
+  <button class="playAgain" style="margin-left:45%;">Play Again</button>
+</div>
+</body>
+</html>
